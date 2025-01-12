@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 60%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat Window */
+.chat-window {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+/* Message Styles */
+.message {
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.message.user {
+    background-color: #d1e7dd;
+}
+
+.message.system {
+    background-color: #f8d7da;
+    font-style: italic;
+}
+
+.message.self {
+    background-color: #cce5ff;
+    text-align: right;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.input-group button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.input-group button:hover {
+    background: #0056b3;
+}
+
+/* Leave Room Button */
+.leave-room {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.leave-room button {
+    padding: 10px 15px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.leave-room button:hover {
+    background: #a71d2a;
+}
