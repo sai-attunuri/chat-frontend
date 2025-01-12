@@ -13,7 +13,9 @@ function joinRoom() {
     document.getElementById("usernameSection").style.display = "none";
     document.getElementById("chatSection").style.display = "block";
 
-    websocket = new WebSocket(`ws://localhost:8000/ws/${room}/${username}`);
+    //websocket = new WebSocket(`ws://localhost:8000/ws/${room}/${username}`);
+    websocket = new WebSocket(`ws://52.207.165.78:8000/ws/${room}/${username}`);
+
 
     websocket.onmessage = function (event) {
         const message = document.createElement("div");
